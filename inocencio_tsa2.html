@@ -1,1 +1,58 @@
+!DOCTYPE html>
+<html>
+<head>
+    <title>Pokemon Form</title>
+</head>
+<body>
+<center>
+<form action="/submit-pokemon" method="post">
+    <table>
 
+        <tr>
+            <td>National Dex:</td> 
+            <td><input type="number" name="nationalDexNumber" min="1"></td> 
+        </tr> 
+        <tr> 
+            <td>Pokémon Name:</td>
+            <td><input type="text" name="pokemonName"></td>
+        </tr> 
+        <tr> 
+            <td>Generation:</td> 
+            <td><input type="radio" name="generation"></td> 
+        </tr>
+        <tr>
+            <td>Image:</td>
+            <td><input type="file" name="pokemonImage"></td>
+        </tr>
+        <tr>
+            <td>Type 1:</td>
+            <td><input type="text" name="type1"></td>
+        </tr>
+        <tr>
+            <td>Type 2:</td>
+            <td><input type="text" name="type2"></td>
+        </tr>
+        <tr>
+            <td>Evolves From:</td>
+            <td><input type="text" name="evolvesFrom"></td>
+        </tr>
+        <tr>
+            <td>Evolves To:</td>
+            <td><input type="text" name="evolvesTo"></td>
+        </tr>
+        <tr>
+            <td>Nickname:</td>
+            <td><input type="text" name="nickname"></td>
+        </tr>
+        <tr>
+            <td>Birthday:</td>
+            <td><input type="date" name="birthday"></td>  
+        </tr>
+    </table>
+
+    <!-- Submit button -->
+    <input type="submit" value="Submit">
+</form>
+</center>
+</body>
+</html>
