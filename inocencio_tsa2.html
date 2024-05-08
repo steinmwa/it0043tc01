@@ -1,62 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
 <head>
-    <title>Pokemon Form</title>
+  <title>inocencio_tsa2</title>
 </head>
 <body>
-<center>
-<form action="/submit-pokemon" method="post">
-    <table>
+  <form action="#" name="pokemon" method="post" align="center">
+	
+	<label for="dex">National Dex:</label>
+		<input type="number" name="dex" id="dex" min="1"> <br> <br>
+	
+	<input type="radio" name="gen" id="gen1" value="gen1">
+		<label for="gen1">Generation 1</label>
+		
+	<input type="radio" name="gen" id="gen2" value="gen2">
+		<label for="gen2">Generation 2</label>
+		
+	<input type="radio" name="gen" id="gen3" value="gen3">
+		<label for="gen3">Generation 3</label>
+		
+	<input type="radio" name="gen" id="gen4" value="gen4">
+		<label for="gen4">Generation 4</label>
+		
+	<input type="radio" name="gen" id="gen5" value="gen4">
+		<label for="gen5">Generation 5</label>
+		
+	<input type="radio" name="gen" id="gen6" value="gen4">
+		<label for="gen6">Generation 6</label>
+		
+    <input type="radio" name="gen" id="gen7" value="gen4">
+		<label for="gen7">Generation 7</label>
+		
+	<input type="radio" name="gen" id="gen8" value="gen4">
+		<label for="gen8">Generation 8</label>
+		
+	<input type="radio" name="gen" id="gen8" value="gen4">
+		<label for="gen8">Generation 9</label> <br> <br>
 
-        <tr>
-            <td>National Dex:</td> 
-            <td><input type="number" name="nationalDexNumber" min="1"></td> 
-        </tr> 
-          
-        
-            <td>Generation 1 </td> 
-            <td><input type="radio" name="generation"></td> 
-        
-         <tr> 
-            <td>Generation 2 </td> 
-            <td><input type="radio" name="generation"></td> 
-        </tr>
-                 <tr> 
-            <td>Generation 3 </td> 
-            <td><input type="radio" name="generation"></td> 
-        </tr>
-                 <tr> 
-            <td>Generation 4 </td> 
-            <td><input type="radio" name="generation"></td> 
-        </tr>
-                 <tr> 
-            <td>Generation 5 </td> 
-            <td><input type="radio" name="generation"></td> 
-        </tr>
-                 <tr> 
-            <td>Generation 6 </td> 
-            <td><input type="radio" name="generation"></td> 
-        </tr>
-                 <tr> 
-            <td>Generation 7 </td> 
-            <td><input type="radio" name="generation"></td> 
-        </tr>
-                 <tr> 
-            <td>Generation 8 </td> 
-            <td><input type="radio" name="generation"></td> 
-        </tr>
-                 <tr> 
-            <td>Generation 2 </td> 
-            <td><input type="radio" name="generation"></td> 
-        </tr>
         <tr> 
             <td>Pokémon Name:</td>
             <td><input type="text" name="pokemonName"></td>
-        </tr>
-        <tr>
+        </tr> <br> <br>
+      
             <td>Image:</td>
             <td><input type="file" name="pokemonImage"></td>
-        </tr>
+        </tr> <br> <br>
         <tr>
             <td>Type 1:</td>
             <td><input type="text" name="type1"></td>
@@ -64,7 +51,7 @@
         <tr>
             <td>Type 2:</td>
             <td><input type="text" name="type2"></td>
-        </tr>
+        </tr> <br> <br>
         <tr>
             <td>Evolves From:</td>
             <td><input type="text" name="evolvesFrom"></td>
@@ -72,20 +59,160 @@
         <tr>
             <td>Evolves To:</td>
             <td><input type="text" name="evolvesTo"></td>
-        </tr>
+        </tr> <br> <br>
         <tr>
             <td>Nickname:</td>
             <td><input type="text" name="nickname"></td>
-        </tr>
+        </tr> <br> <br>
         <tr>
             <td>Birthday:</td>
             <td><input type="date" name="birthday"></td>  
-        </tr>
-    </table>
-
+        </tr> <br> <br>
+	
     <!-- Submit button -->
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit"> <br> <br>
 </form>
-</center>
+<table border="1"  align="center" > <tr> 
+	<th> National Dex </th> 
+	<th> Generation </th>
+	<th>Pokemon Name</th>
+	<th>Image</th> 
+	<th>Type 1</th> 
+	<th>Type 2</th>
+	<th>Evolves From</th> 
+	<th>Evolves To</th> 
+	<th>Nickname</th>
+	<th>Birthday</th> 
+	
+	</tr> <tr> 
+	
+	<th>1</th> 
+	<td>Generation 1</td> 
+	<td>Kirstein</td> 
+	<td> <img src="1.jpg" width="100" height="100"> </td> 
+	<td>Grass</td> 
+	<td>Poison</td> 
+	<td> - </td> 
+	<td>Ivysaur</td> 
+	<td>Palaka</td> 
+	<td>01-01-12</td> 
+	
+	</tr> <tr> 
+
+	<th>2</th> 
+	<td>Generation 2</td> 
+	<td>Apple</td> 
+	<td>Data</td> 
+	<td colspan ="2"> data </td> 
+	<td>Data</td> 
+	<td>Data</td> 
+	<td>Data</td> 
+	<td>Data</td> 
+	<td>Data</td> 
+	
+	</tr> <tr>
+	
+	<th>3</th> 
+	
+	<td>Generation 3</td> 
+	<td>Manggo</td> 
+	<td>Data</td> 
+	<td colspan ="2"> data </td> 
+	<td> - </td> 
+	<td>Data</td> 
+	<td>Data</td> 
+	<td>Data</td> 
+	<td>Data</td> 
+	
+ </tr> <tr> 
+ 
+ 	<th>4</th> 
+	
+	<td>Generation 4</td> 
+	<td>Manggo</td> 
+	<td>Data</td> 
+	<td colspan ="2"> data </td> 
+	<td> - </td> 
+	<td>Data</td> 
+	<td>Data</td> 
+	<td>Data</td> 
+	<td>Data</td> 
+	
+ </tr> <tr> 
+ 
+ 	<th>5</th> 
+	
+	<td>Generation 5</td> 
+	<td>Manggo</td> 
+	<td>Data</td> 
+	<td colspan ="2"> data </td> 
+	<td> - </td> 
+	<td>Data</td> 
+	<td>Data</td> 
+	<td>Data</td> 
+	<td>Data</td> 
+	
+ </tr> <tr> 
+ 
+ 	<th>6</th> 
+	
+	<td>Generation 6</td> 
+	<td>Manggo</td> 
+	<td>Data</td> 
+	<td colspan ="2"> data </td> 
+	<td> - </td> 
+	<td>Data</td> 
+	<td>Data</td> 
+	<td>Data</td> 
+	<td>Data</td> 
+	
+ </tr> <tr> 
+ 
+ 	<th>7</th> 
+	
+	<td>Generation 7</td> 
+	<td>Manggo</td> 
+	<td>Data</td> 
+	<td colspan ="2"> data </td> 
+	<td> - </td> 
+	<td>Data</td> 
+	<td>Data</td> 
+	<td>Data</td> 
+	<td>Data</td> 
+	
+ </tr> <tr> 
+ 
+ 	<th>8</th> 
+	
+	<td>Generation 8</td> 
+	<td>Manggo</td> 
+	<td>Data</td> 
+	<td colspan ="2"> data </td> 
+	<td> - </td> 
+	<td>Data</td> 
+	<td>Data</td> 
+	<td>Data</td> 
+	<td>Data</td> 
+	
+ </tr> <tr> 
+ 
+ 
+ 	<th>9</th> 
+	
+	<td>Generation 9</td> 
+	<td>Manggo</td> 
+	<td>Data</td> 
+	<td colspan ="2"> data </td> 
+	<td> - </td> 
+	<td>Data</td> 
+	<td>Data</td> 
+	<td>Data</td> 
+	<td>Data</td> 
+	
+ </tr> <tr> 
+ 
+ </table>
+    
+
 </body>
 </html>
