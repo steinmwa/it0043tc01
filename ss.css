@@ -1,0 +1,76 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Alfa+Slab+One&family=Bebas+Neue&family=Danfo&family=Jersey+10&family=Jersey+25+Charted&family=Teko:wght@300..700&family=Titan+One&display=swap');
+
+body{
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: roboto;
+}
+
+
+.heading{
+    font-size: 11rem;
+    font-family: "Alfa Slab One", sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: midnightblue ;
+    padding: 5px;
+    border: 10px solid white;
+    border-radius: 0px;
+
+
+}
+
+img{
+    height: 200px;
+    width: 200px;
+    margin-bottom: 0;
+}
+.subheading{
+    font-size: 3rem;
+    font-family: "Jersey 10", sans-serif;
+    margin-top: 1;
+    margin-bottom:10;
+   
+}
+
+.color{
+    font-family: "Jersey 10", sans-serif;
+    font-weight: bold;
+    color:midnightblue;
+}
+
+.paragraph-one{
+    font-family: "Jersey 25 Charted", sans-serif;
+    margin-top: auto;
+    font-size: 2rem;
+
+
+}
+
+.paragraph-two{
+    font-family: "Bebas Neue", sans-serif;
+    margin-top: 0;
+    font-size: 2rem;
+
+
+
+}
+
+.maroon{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: bold;
+    color:maroon;
+}
+
+.paragraph-three{
+    font-family: "Amiri", sans-serif;
+    margin-top: 0;
+    font-size: 1rem;
+    color: maroon;
+  
+
+
+}
