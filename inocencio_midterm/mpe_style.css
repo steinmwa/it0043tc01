@@ -1,0 +1,258 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    transition: 1s ease;
+}
+body {
+
+    background-color: black;
+
+
+}
+
+.flex-container{
+    background-image: url(bg1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 90vw;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+
+}
+
+
+.box{
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+img{
+    width: 100%;
+}
+
+p{
+    font-family: "Poppins", serif; 
+    display: none;
+    text-align: center;
+    color: white;
+    font-size: 1.6rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 2); 
+  
+}
+
+.type1, .type2{
+
+        font-family: Arial, Helvetica, sans-serif;;
+        color: white;
+        padding: 0.5rem 1.2rem;
+        border-radius: 0.5rem;
+        /* margin: 0.5rem 0.5rem; */
+        font-size: 0.5rem;
+        text-shadow: 1px 1px 5px black;
+    
+}
+
+.types{
+	display: none;
+	text-align: center;
+}
+
+#pokeball{
+    display: none;
+    width: 65px;
+    height: 60px;
+}
+
+@media(max-width: 1200px){
+    .box{
+		display: flex;
+        padding: 20px;
+        width: 600px;
+        vertical-align: center;
+        flex-grow: 1;
+    }
+
+    .box:hover{
+        background-image: url("card1.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+    }
+	
+
+    p, #pokeball{
+        display: inline-block;
+    }
+
+    img{
+        width: 100px;
+    }
+}
+
+
+
+@media(max-width: 500px){
+    .box{
+        padding: 20px;
+        width: 250px;
+        vertical-align: center;
+        flex-grow: 1;
+		flex-direction: column;
+}
+
+    .box:hover{
+        background-image: url("card3.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+    }
+
+    p, types{
+        display: inline-block;
+    }
+
+    #pokeball{
+        display: none;
+    }
+
+    img{
+        width: 150px;
+    }
+	
+	.types{
+		width: 100%;
+		margin: 0 10rem;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.type1, .type2{
+		display: inline-block;
+		padding: 0.5rem;
+		border-radius: 0.5rem;
+		margin: 0.5rem;
+		color: white;
+		font-size: 1.5rem;
+		flex-grow: 1;
+	}
+}
+
+.bug{
+	background-color: #828c34;
+}
+
+.fire{
+	background-color:  red;
+}
+
+
+.normal{
+	background-color:  #adadac;
+}
+
+.fairy{
+	background-color:  #f96ef5;
+}
+
+.fighting{
+	background-color: #C22E28;
+}
+
+.psychic{
+	background-color: #F95587;
+}
+
+.flying{
+	background-color: #78a7d4;
+}
+
+.water{
+	background-color: #6390F0;
+}
+
+.poison{
+    background-color: darkviolet;
+}
+
+.grass{
+    background-color: green;
+}
+
+.electric{
+    background-color: #F7D02C;
+
+}
+#mew{
+    background-color: #deb8a5;
+    
+
+}
+
+#pikachu{
+    background-color: #fdae18 ;
+    
+}
+
+#rattata{
+    background-color: #cca4cd;
+}
+
+#snorlax{
+    background-color: #89aed2;
+    
+}
+
+#weedle{
+    background-color: #d8be91;
+}
+
+#pidgey{
+    background-color: #f6c586;
+}
+
+#mankey{
+    background-color: #e6c595;
+}
+
+#psyduck{
+    background-color: #e8d797;
+}
+
+#pidgey{
+    background-color: #f6c586;
+}
+#jigglypuff{
+    background-color: #cc91b7;
+}
+#zubat{
+    background-color:  #7099e7;
+
+}
+
+#charmander1{
+    background-color: #db9b68;
+
+}
+
+#bullbasaur{
+    background-color: #92c8a8;
+
+}
