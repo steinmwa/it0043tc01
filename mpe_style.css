@@ -16,7 +16,7 @@ body {
 }
 
 .flex-container{
-    background-image: url(bg.jpg);
+    background-image: url(bg1.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -122,7 +122,7 @@ p{
 }
 
     .box:hover{
-        background-image: url("card3.jpg");
+        background-image: url("hover.jpg");
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
