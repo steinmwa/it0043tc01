@@ -10,7 +10,7 @@
 }
 body {
 
-    background-color: #a4c38a;
+    background-color: #b5a2a9;
 
 
 }
@@ -36,7 +36,7 @@ body {
 
 
 .box{
-    width: 300px;
+    width: 280px;
     padding: 20px;
     vertical-align: center;
     display: flex;
