@@ -1,0 +1,213 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+body{
+    background-image: url(bg_tsa5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.insideout-container{
+    width: 85vw;
+    border: 10px;
+    margin: 20px auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+
+.item{
+    border: 5px solid #534d6b;
+    padding: 10px;
+    border-radius: 25px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+}
+
+
+.details{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+
+#sadness .details {
+    flex-direction: row;
+}
+
+
+img{
+    width:200px;
+
+}
+
+.name{
+
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.race{
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+
+}
+
+.desc{
+    text-align: justify;
+    line-height: 1.5;
+    margin-top: 20px;
+    margin: 10px;
+}
+
+
+#sadness{
+    background-color: #6da4d1;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+#joy{
+    background-color: #f1dc8a;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+#disgust{
+    background-color: #9dc49f;
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+
+#anger{
+    background-color: #db7b7d;
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+
+#fear{
+    background-color: #be98c3;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+
+#sadness .details,
+#anger .details{
+    flex-direction: row;
+}
+
+@media(max-width: 1100px) {
+    .insideout-container{
+        grid-template-columns: repeat(2,1fr);
+    
+    }
+    
+    #sadness{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    #joy{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    
+    #disgust{
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    
+    #anger{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    #fear{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    #disgust .details{
+        flex-direction: row;
+    }
+
+    #sadness .details,
+    #anger .details{
+        flex-direction: column;
+    }
+
+}
+
+@media(max-width: 600px){
+
+
+    .insideout-container{
+        grid-template-columns: 1fr;
+    }
+   
+    #sadness{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    #joy{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    #disgust{
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    
+    #anger{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    
+    #fear{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .name{
+
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-right: 25px;
+    }
+    
+    .race{
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+        margin-right: 25px;
+    
+    }
+
+
+    #sadness .details,
+    #anger .details,
+    #joy .details,
+    #disgust .details,
+    #fear .details{
+        flex-direction: row;
+    }
+}
