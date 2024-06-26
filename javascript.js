@@ -3,42 +3,50 @@ function setGap() {
     const flexBox = document.querySelector("#flex-box");
     flexBox.style.gap = `${gapValue}px`;
     console.log(`Gap set to: ${flexBox.style.gap}`);
-    
-
+    setFlexGrow();
 }
 
 function setJustifyContent(value) {
     const flexBox = document.querySelector("#flex-box");
     const justifyOptions = ["flex-start", "center", "flex-end", "space-between", "space-around", "space-evenly"];
-    flexBox.style.justifyContent = justifyOptions[value - 1];
-    console.log(`Justify content set to: ${flexBox.style.justifyContent}`);
-   
-
+    if (justifyOptions.includes(value)) {
+        flexBox.style.justifyContent = value;
+        console.log(`Justify content set to: ${flexBox.style.justifyContent}`);
+    } else {
+        console.error("Invalid justify content value.");
+    }
+    setFlexGrow();
 }
-
 
 function setAlignItems(value) {
     const flexBox = document.querySelector("#flex-box");
-    const alignOptions = ["flex-start", "center", "flex-end", "stretch"];
-    flexBox.style.alignItems = alignOptions[value - 1];  
-    console.log(`Align items set to: ${flexBox.style.alignItems}`);
-
-
-
+    const alignOptions = ["flex-start", "center", "flex-end"];
+    if (alignOptions.includes(value)) {
+        flexBox.style.alignItems = value;
+        console.log(`Align items set to: ${flexBox.style.alignItems}`);
+    } else {
+        console.error("Invalid align items value.");
+    }
+    setFlexGrow();
 }
 
 function setFlexDirection(value) {
     const flexBox = document.querySelector("#flex-box");
-    flexBox.style.flexDirection = value === 1 ? "row" : "column";
-    console.log(`Flex direction set to: ${flexBox.style.flexDirection}`);
-
+    if (value === "row" || value === "column") {
+        flexBox.style.flexDirection = value;
+        console.log(`Flex direction set to: ${flexBox.style.flexDirection}`);
+    } else {
+        console.error("Invalid flex direction value.");
+    }
+    setFlexGrow();
 }
 
 function setFlexGrow(boxIndex) {
     const flexGrowValues = [
         document.querySelector("#grow1").value,
         document.querySelector("#grow2").value,
-        document.querySelector("#grow3").value ];
+        document.querySelector("#grow3").value
+    ];
     const squares = document.querySelectorAll(".square");
 
     squares.forEach((square, index) => {
@@ -51,9 +59,8 @@ function setFlexGrow(boxIndex) {
         }
     });
 
-    squares.forEach((square, index) => {            
-    console.log(`Square ${index+1} flex-grow: ${square.style.flexGrow}`);
-
+    squares.forEach((square, index) => {
+        console.log(`Square ${index + 1} flex-grow: ${square.style.flexGrow}`);
     });
 }
 
@@ -70,4 +77,19 @@ function resetFlexBox() {
     document.querySelectorAll(".square").forEach(square => {
         square.style.flexGrow = "0";
     });
+    console.log("Flexbox reset to default settings");
 }
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.querySelectorAll(".function");
+
+    buttons.forEach(button => {
+        button.addEventListener("click", () => {
+            button.classList.add("function-clicked");
+            setTimeout(() => {
+                button.classList.remove("function-clicked");
+            }, 300);
+        });
+    });
+});
