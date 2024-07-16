@@ -87,12 +87,12 @@
 
 #image1 {
     background-image: url("image1.png");
-    background-position: 27% center;
+    background-position: 15.2% center;
 }
 
 #image2 {
     background-image: url("image2.png");
-    background-position: 78% center;
+    background-position: 90% center;
 }
 
 .face:hover {
