@@ -182,6 +182,31 @@
     
 }
 
+@media (max-width: 1536px) {
+    .container-fluid {
+        height: 60vh;
+    }
+    .text-left, .text-right {
+        padding: 9rem;
+    }
+    .text-left h1, .text-right h1 {
+        font-size: 2.5rem;
+    }
+    .text-left p, .text-right p {
+        font-size: 0.8rem;
+    }
+    .face {
+        height: 500px;
+    }
+    #image1 {
+        background-position: 18.8% center;
+    }
+    #image2 {
+        background-position: 87% center;
+    }
+}
+
+
 @media (max-width: 990px) {
     .container-fluid {
         height: 50vh;
