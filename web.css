@@ -227,7 +227,7 @@
 
 
 
-@media (max-width: 930px) {
+@media (max-width: 1290px) {
     .container-fluid {
         height: 50vh;
         display: flex;
@@ -309,16 +309,9 @@
         transition: transform 0.5s ease, opacity 0.5s ease;
     }
     
-    #image1 {
-        background-image: url("image1.png");
-        background-position: -15.4% center;
+    #image1, #image2 {
+        display: none;
     }
-    
-    #image2 {
-        background-image: url("image2.png");
-        background-position: 121% center;
-    }
-    
 }
 
 
@@ -343,14 +336,8 @@
         background-position: center;
     }
     
-    #image1 {
-        background-image: url("image1.png");
-        background-position: -24% center;
-    }
-    
-    #image2 {
-        background-image: url("image2.png");
-        background-position: 134% center;
+    #image1, #image2 {
+        display: none;
     }
 
     .text-left p, .text-right p {
